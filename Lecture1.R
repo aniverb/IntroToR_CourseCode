@@ -53,8 +53,9 @@ matrix1 <- matrix(1:9, nrow=3)
 matrix2 <- matrix(2:5, nrow=2)
 matrix1*matrix1
 matrix1%*%matrix1
-'matrix2[2,1]
-i 
+matrix2[2,1]
+
+'i 
 am
 a docstring, a comment spanning multiple lines'
 
@@ -62,7 +63,7 @@ a docstring, a comment spanning multiple lines'
 list1 <- list(animal1 = "cat",animal2 = "dog", number1 = 1, number2 = 2)
 list1[["animal2"]]
 list1$animal2 <- "cat"
-df=data.frame(numbers=9:12, truths=rep(TRUE,4), strings=c("Mary", "had a", "little", "lamb."), stringsAsFactors = FLASE) #note the addition of stringsAsFactors argument
+df=data.frame(numbers=9:12, truths=rep(TRUE,4), strings=c("Mary", "had a", "little", "lamb."), stringsAsFactors = FALSE) #note the addition of stringsAsFactors argument
 df$strings[3]
 df[3,3] #same as above
 df[2,2]=3
