@@ -62,7 +62,7 @@ a docstring, a comment spanning multiple lines'
 list1 <- list(animal1 = "cat",animal2 = "dog", number1 = 1, number2 = 2)
 list1[["animal2"]]
 list1$animal2 <- "cat"
-df=data.frame(numbers=9:12, truths=rep(TRUE,4), strings=c("Mary", "had a", "little", "lamb."))
+df=data.frame(numbers=9:12, truths=rep(TRUE,4), strings=c("Mary", "had a", "little", "lamb."), stringsAsFactors = FLASE) #note the addition of stringsAsFactors argument
 df$strings[3]
 df[3,3] #same as above
 df[2,2]=3
@@ -99,6 +99,6 @@ if (x==2){
   } else if (x>5){
     print("x is greater than 5.")
     } else{
-  print("x is greater than 2 but less than or equal to 5.")
+  print("x is greater than 2 but less than or equal to 5.") #added "or equal" to else block to make statement fully correct
   }
 
