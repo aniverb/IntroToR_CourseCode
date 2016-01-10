@@ -11,4 +11,5 @@ play() - swirl ignores
 nxt() - stop playing
 bye()/0 - exit
 info() - display commands
+main() - see main menu
 ... - prompt to hit enter'
