@@ -50,6 +50,7 @@ rnorm(5, sd=.25, mean=2)
 #independent events happening over time
 rpois(12, lambda = 2)
 
+
 #Uniform Distribution, events with equal probablity
 runif(6)
 runif(6, -.5, .5)
@@ -89,11 +90,14 @@ sapply(z, sum)
 setwd("C:/Users/aniverb/Documents/Grad School/JHU/Intro to R/2016 Materials/Files")#your file path
 diabetic <- read.csv("diabetic_data.csv")
 subDiabetic <- diabetic[13:15]
-subDiabetic <- diabetic[,13:15] #same as above
+subDiabetic_m <- diabetic[,13:15] #same as above
 lapply(subDiabetic, mean)
-sapply(subDiabetic, mean)
+sapply(subDiabetic_m, mean)
 
 names(diabetic) #to copy column names
-subDiabetic1 <- diabetic[[c("num_lab_procedures", "num_procedures", "num_medications" )]] #does not actually work because would need to loop through vector, can use below instead
+subDiabetic1 <- diabetic[[c("num_lab_procedures", "num_procedures", "num_medications" )]] #does not actually work because double brackets implies vector
+
+subDiabetic1 <- diabetic[c("num_lab_procedures", "num_procedures", "num_medications" )] #single bracket implies dataframe
 subDiabetic1 <- data.frame(diabetic[["num_lab_procedures"]], diabetic[["num_procedures"]], diabetic[["num_medications"]])
 sapply(subDiabetic1, mean)
+
