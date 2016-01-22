@@ -42,4 +42,4 @@ meanVector <- function(df){
 
 meanVector(subDiabetic)
 
-#what if sapply(subDiabetic, sd)? what needs to change in out function to make it truly be an sapply or lapply replacement?
+#what if sapply(subDiabetic, sd)? what needs to change in our function to make it truly be an sapply or lapply replacement?
